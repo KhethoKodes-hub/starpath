@@ -114,7 +114,7 @@
                 <div class="preloader-dot"></div>
             </div>
 
-            <!-- Optional Branding -->
+            <!-- Optional Branding (you can remove or keep) -->
             <div class="loader-brand">
                 <img class="loader-logo" src="assets/img/starassets/stlogo.png" style="width: 120px;" alt="Starpath Academy">
                 <h4>STARPATH ACADEMY</h4>
@@ -133,8 +133,7 @@
 
                     // Redirect after fade completes (500ms)
                     setTimeout(function() {
-                        // FIX: Use relative path - works on both local and production
-                        window.location.href = 'index.html';
+                        window.location.href = '/Template_File/canyon/index.html';
                     }, 500);
                 }, 3500); // 3.5 seconds display time
             });
@@ -146,11 +145,10 @@
                 if (!loader.classList.contains('hidden')) {
                     loader.classList.add('hidden');
                     setTimeout(function() {
-                        // FIX: Use relative path
-                        window.location.href = 'index.html';
+                        window.location.href = '/Template_File/canyon/index.html';
                     }, 500);
                 }
-            }, 2000); // 8 seconds max wait
+            }, 8000); // 8 seconds max wait
         </script>
 
     </body>
